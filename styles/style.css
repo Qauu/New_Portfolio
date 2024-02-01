@@ -82,7 +82,6 @@ nav ul li a:hover{
     justify-content: space-around;
     margin-top: 9%;
     padding-left: 50px;
-   flex-wrap: wrap;
     animation: fadeIn 0.5s backwards;
 }
 .section_one{
@@ -140,10 +139,16 @@ section{
     background-color:rgb(2, 14, 47) ;
     
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:428px){
+    .icons,.cv{
+        width:40px;
+    }
+}
+@media screen and (max-width:879px){
     .main .img{
         display: none;
     }
+   
     .section_one{
         max-width:90%;
         padding: 20px;   
@@ -167,6 +172,8 @@ section{
    
    
 }
+
+
 
 
 #about,#skills,#contact{
@@ -257,11 +264,11 @@ figcaption{
     width:100%;
     margin-top: 10%;   
    display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   
 }
 .social{
-    max-width: 60%;
     font-size: 32pt;
    margin-top: 40px;
     margin-left: 50px;
@@ -272,8 +279,6 @@ figcaption{
 }
 .mail{
     font-size: 32pt;
-    flex-grow: 1;
-    margin-left: 300px; 
 
 }
 .mail input {
@@ -282,35 +287,73 @@ figcaption{
     margin-bottom: 30px; 
 }
 .mail textarea{
+    width:400px;
     font-size: 28pt;
 }
-@media  screen and (max-width:768px) {
-   .social{
-    font-size: 16pt;
-    margin-top: 20px;
-    margin-bottom: 30px;
-   }
-   .social i{
-    margin-right: 15px;
-    margin-bottom: 10px;
-   }
-   .mail{
-    margin-left: 50px;
-    padding: 0;
-    font-size: 16pt;
-   }
-   .mail input{
-    padding: 10px;
-    width:300px;
-    margin-bottom: 10px;
-   }
-   textarea{
-    width:380px;
-   }
-   .main{
-    justify-content: space-between;
-   }
+@media  screen and (max-width:700px) {
+    .contacting{
+        display: flex;
+    }
+    .contact-me{
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-top: 0;
+    }
+    .social {
+        font-size: 16pt;
+    }
+    .social {
+        margin-left:0 ;
+    }
+    .mail{
+        font-size:16pt ;
+    }
 }
+
+
+@media screen and (max-width:1433px){
+    .mail input{
+        padding: 10px;
+        width:230px;
+        margin-bottom: 10px;
+       }
+       textarea{
+        width:350px;
+       }
+       .icons,.cv{
+        width:170px;
+       }
+       .main{
+        justify-content: space-between;
+       }
+}
+@media screen and (max-width:1083px){ 
+    .social{
+        font-size: 25pt;
+        margin-top: 20px;
+        margin-bottom: 30px;
+       }
+       .social i{
+        margin-left:10px;
+        margin-bottom: 10px;
+       }
+       .mail{
+        padding: 0;
+        font-size: 25pt;
+       }
+       .mail input{
+        padding: 10px;
+        margin-bottom: 10px;
+       }
+       textarea{
+        width:300px;
+       
+       }
+       
+    }
+
 .footer{
     border-top: 1px solid rgb(201, 201, 201);
     
